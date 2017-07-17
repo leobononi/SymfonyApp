@@ -1,0 +1,14 @@
+{% extends 'appbase.html.twig' %}
+{% block body %}
+    <div id="wrapper">
+        <div id="container">
+            <div id="upload">
+                <h1><span>Upload file</span></h1>
+                {{ form_start(form) }}
+				{{ form_widget(form) }}
+				<input type="submit" value="Process" />
+				{{ form_end(form) }}
+            </div>
+        </div>
+    </div>
+{% endblock %}
